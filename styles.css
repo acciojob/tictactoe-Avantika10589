@@ -1,67 +1,29 @@
-/*  your css code here. If applicable */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  margin-top: 40px;
 }
 
-h1 {
-  font-family: 'Comic Sans MS', cursive;
-}
-
-.container {
-  margin-top: 30px;
-}
-
-#player-form {
+.players {
   margin-bottom: 20px;
 }
 
-input {
-  margin: 5px;
-  padding: 8px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-}
-
-#submit {
-  padding: 8px 15px;
-  cursor: pointer;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}
-
 .board {
-  display: none;
-  margin: 20px auto;
-}
-
-.grid {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  gap: 2px;
-}
-
-.cell {
-  background: pink;
-  display: flex;
+  grid-gap: 5px;
   justify-content: center;
-  align-items: center;
-  font-size: 36px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid black;
 }
 
-.cell.winner {
-  background: purple !important;
-  color: white;
+.board button {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .message {
-  margin-top: 15px;
-  font-size: 20px;
+  margin: 20px;
   font-weight: bold;
+  font-size: 18px;
 }
