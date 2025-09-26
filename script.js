@@ -26,7 +26,7 @@ board.forEach(cell => {
       return;
     }
 
-    // switch player
+    
     currentPlayer = currentPlayer === "x" ? "o" : "x";
     const nextName = currentPlayer === "x" ? player1 : player2;
     document.querySelector(".message").textContent = `${nextName}, you're up`;
